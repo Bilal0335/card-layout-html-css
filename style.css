@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 95vw;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+}
+
+.header_container {
+  margin-bottom: 2.8rem;
+}
+
+.header_title {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header_desc {
+  max-width: 528px;
+  text-align: center;
+  color: grey;
+  margin: 0 auto;
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+  gap: 1.5rem;
+  justify-content: center;
+  /* grid-template-columns: repeat(1,1fr); */
+}
+/* @media (min-width: 650px) {
+  .main_container {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (min-width: 1080px) {
+  .main_container {
+    grid-template-columns: repeat(3,1fr);
+  }
+} */
+
+.card_container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid grey;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.card_container:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card_image_container {
+  position: relative;
+  overflow: hidden;
+  height: 10rem;
+}
+
+@media (min-width: 768px) {
+  .card_image_container {
+    height: 20rem;
+  }
+}
+
+.card_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card_container:hover .card_image {
+  transform: scale(1.1);
+}
+
+.card_title_container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.card_title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: rgb(25, 23, 23);
+}
+
+.card_title_anchor:hover .card_title {
+  color: rgb(44, 44, 230);
+}
+
+.card_desc {
+  font-size: 0.9rem;
+  color: rgb(100, 100, 100);
+}
+
+.card_footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1.5rem;
+}
+
+.author_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author_avatar_container {
+  height: 2.5rem;
+  width: 2.5rem;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+.author_avatar_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.author_info_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.author_name {
+  color: rgb(25, 23, 23);
+  font-weight: 500;
+}
+
+.author_date {
+  color: rgb(100, 100, 100);
+  font-size: 0.85rem;
+}
+
+.card_tag_container {
+  font-size: 0.85rem;
+  border: 1px solid grey;
+  border-radius: 2px;
+  line-height: 1.3rem;
+  padding: 0.25rem 0.5rem;
+  color: grey;
+}
