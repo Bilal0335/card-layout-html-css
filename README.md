@@ -11,9 +11,9 @@ A responsive blog card layout built using **HTML** and **CSS**. Each card displa
 
 ## 📸 Preview
 
-![screenshot](https://picsum.photos/1000/400)  
+![screenshot](https://github.com/Bilal0335/card-layout-html-css/raw/main/card%20completet.PNG)  
 *Sample blog card layout preview*
-
+ 
 ## 📁 Project Structure
 ├── index.html # Main HTML file
 ├── style.css # Styling using Flexbox and Grid
