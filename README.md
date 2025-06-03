@@ -16,5 +16,15 @@ A responsive blog card layout built using **HTML** and **CSS**. Each card displa
  
 ## 📁 Project Structure
 ├── index.html # Main HTML file
+
 ├── style.css # Styling using Flexbox and Grid
+
 └── README.md # Project documentation
+
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3 (Grid + Flexbox)
+- Responsive design principles
+
